@@ -5,32 +5,127 @@
   <meta charset="UTF-8">
   <meta name="description" content="Late projects worked on by Calum Fleming.">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  
 </head>
 
 <body>
-  <h1><center>Portfolio</center></h1>
-  <hr style="border: none; height: 2px; background-color: black;">
 
-  <div class="row">
-    <div class="column">
-      <img src="Trickle Vents.jpg">
-      <img src="monstera.jpg">
+  
+  <h1>Calum Fleming</h1>
+
+ <div class="row">
+    <div class="column1">
+        <div class="menu">
+    <h2><button data-section="engineering">Engineering</button></h2>
+    <h3><button data-section="creative">Creative</button></h3>
+
+    <h2><button data-section="about">About</button></h2>
+    <h3><button data-section="contact">Contact</button></h3>
+    <h3><button data-section="reading">Reading</button></h3>
+   <h3><a href="https://www.linkedin.com/in/calumfleming/" target="_blank">
+  <img src="linkedin.png" alt="Description of image" width="20"> </a></h3>
+
+
+
+  </div>
     </div>
 
-    <div class="column">
+    <div class="column2">
+      <div class="content" id="content">
+    <h5><p>Calum Fleming is a fifth-year MEng Mechanical Engineering student at the University of Edinburgh and Junior Engineer at Edinburgh Designs.</p></h5>
+
+
+  </div>
+    </div>
+
+  <script>
+    const buttons = document.querySelectorAll('.menu button');
+    const content = document.getElementById('content');
+
+    const sections = {
+      engineering: ` <h4>Engineering</h4>
+
+    <hr style="border: none; height: 1px; background-color: black; margin-bottom: 100px;">
+
+         <div class="row">
+
+     <div class="columneng1">
       <video autoplay loop muted playsinline>
         <source src="wallet.mov" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
 
-    <div class="column">
-      <img src="hook.jpg">
+    <div class="columneng2">
+      <img src="accessiblewalletdrawing.png">
     </div>
 
-    <div class="column">
-      <img src="mirror.jpg">
-    </div>
-  </div>
+      `,
+      creative: `
+        <h4>Creative</h4>
+
+    <hr style="border: none; height: 1px; background-color: black; margin-bottom: 30px;">
+
+    <p> Coming soon </p>      `,
+
+    about: `
+        <h4>About</h4>
+
+    <hr style="border: none; height: 1px; background-color: black; margin-bottom: 30px;">
+
+    <p>I am a curious and driven individual with a passion for problem-solving, innovation, and continuous learning. With a background in Mechanical Engineering and hands-on experience as a Junior Engineer, I apply creative and analytical thinking to complex challenges. </p>
+    
+    <p>Over the last five years, I have sought experience across multiple industries, looking to see how I can apply my skillset to make real impact. Relevant industries include: hydrodynamics, building services, data science, performance engineering and automotive repair.</p>
+    
+    <p>Recently, I attended an open day at the NHS SMART Centre, based at the Astley Ainslie Hospital, to gain insight into the field of clinical engineering and prosthetics. This experience has deepened my interest in medical technology and its potential to improve lives through innovative design and engineering.</p>
+
+    <h6><p>Professional Career</p></h6>
+
+    <h7><p>2025-Present Edinburgh Designs, Junior Engineer</p></h7>
+    <h7><p>2025-2025 Edinburgh Designs, Placement Engineer</p></h7>
+
+
+    <h6><p>University Education</p></h6>
+
+    <p>2021-2026 The University of Edinburgh, MEng, Mechanical Engineering</p>
+
+    `,
+
+    contact: `
+        <h4>Contact</h4>
+
+    <hr style="border: none; height: 1px; background-color: black; margin-bottom: 30px;">
+
+    <p>Feel free to reach out — I’m always open to new ideas and conversations. </p>
+
+    <p>Email: calumfleming18@gmail.com </p>
+
+     `,
+    reading: `
+        <h4>Reading</h4>
+
+    <hr style="border: none; height: 1px; background-color: black; margin-bottom: 30px;">
+
+    <p>Le Corbusier Architect of the Century</p>
+    <p>We are Electric - Sally Adee</p>
+     `
+    };
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        button.classList.add('active');
+        const section = button.dataset.section;
+        content.innerHTML = sections[section];
+      });
+    });
+  </script>
+
+  
+
+
+  
+
+ 
 </body>
 </html>
