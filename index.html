@@ -5,105 +5,107 @@
   <meta charset="UTF-8">
   <meta name="description" content="Late projects worked on by Calum Fleming.">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  
 </head>
 
 <body>
-
-  
   <h1>Calum Fleming</h1>
 
- <div class="row">
+  <div class="row">
     <div class="column1">
-        <div class="menu">
-    <h2><button data-section="engineering">Engineering</button></h2>
-    <h3><button data-section="creative">Creative</button></h3>
-
-    <h2><button data-section="about">About</button></h2>
-    <h3><button data-section="contact">Contact</button></h3>
-    <h3><button data-section="reading">Reading</button></h3>
-   <h3><a href="https://www.linkedin.com/in/calumfleming/" target="_blank">
-  <img src="linkedin.png" alt="Description of image" width="20"> </a></h3>
-
-
-
-  </div>
+      <div class="menu">
+        <h2><button data-section="engineering">Engineering</button></h2>
+        <h3><button data-section="creative">Creative</button></h3>
+        <h2><button data-section="about">About</button></h2>
+        <h3><button data-section="contact">Contact</button></h3>
+        <h3><button data-section="reading">Reading</button></h3>
+        <h3><a href="https://www.linkedin.com/in/calumfleming/" target="_blank">
+          <img src="linkedin.png" alt="Description of image" width="20">
+        </a></h3>
+      </div>
     </div>
 
     <div class="column2">
       <div class="content" id="content">
-    <h5><p>Calum Fleming is a fifth-year MEng Mechanical Engineering student at the University of Edinburgh and Junior Engineer at Edinburgh Designs.</p></h5>
-
-
-  </div>
+        <h5><p>Calum Fleming is a fifth-year MEng Mechanical Engineering student at the University of Edinburgh and Junior Engineer at Edinburgh Designs.</p></h5>
+      </div>
     </div>
+  </div>
 
   <script>
+    // ---- MENU BUTTONS ----
     const buttons = document.querySelectorAll('.menu button');
     const content = document.getElementById('content');
 
     const sections = {
-      engineering: ` <h4>Engineering</h4>
+      engineering: `
+        <h4>Engineering</h4>
+        <hr style="border: none; height: 1px; background-color: black; margin-bottom: 100px;">
+        <div class="row">
 
-    <hr style="border: none; height: 1px; background-color: black; margin-bottom: 100px;">
+          <!-- /* photos START */ interactive cards + data for hover swap + modal trigger -->
+          <div class="columneng1">
+            <a class="eng-card" href="project-window-vent.html" data-slug="window-vent">
+              <img
+                src="windowventdoodle.png"
+                alt="Window ventilation concept doodle"
+                class="eng-img"
+                data-hover-src="windowventdoodleg.png"
+                data-original-src="windowventdoodle.png"
+              >
+            </a>
+          </div>
 
-    <p> Coming soon </p> 
+          <div class="columneng2">
+            <a class="eng-card" href="project-watering.html" data-slug="auto-watering">
+              <img
+                src="wateringdoodle.png"
+                alt="Self-watering system concept doodle"
+                class="eng-img"
+                data-hover-src="wateringdoodleg.png"
+                data-original-src="wateringdoodle.png"
+              >
+            </a>
+          </div>
+          <!-- /* photos END */ -->
 
+        </div>
       `,
       creative: `
         <h4>Creative</h4>
-
-    <hr style="border: none; height: 1px; background-color: black; margin-bottom: 100px;">
-
-    <p> Coming soon </p>      `,
-
-    about: `
+        <hr style="border: none; height: 1px; background-color: black; margin-bottom: 100px;">
+        <p> Coming soon </p>
+      `,
+      about: `
         <h4>About</h4>
+        <hr style="border: none; height: 1px; background-color: black; margin-bottom: 30px;">
+        <p>I am a curious and driven individual with a passion for problem-solving, innovation, and continuous learning. With a background in Mechanical Engineering and hands-on experience as a Junior Engineer, I apply creative and analytical thinking to complex challenges. </p>
+        <p>Over the last five years, I have sought experience across multiple industries, looking to see how I can apply my skillset to make real impact. Relevant industries include: hydrodynamics, building services, data science, performance engineering and automotive repair.</p>
+        <p>Recently, I attended an open day at the NHS SMART Centre, based at the Astley Ainslie Hospital, to gain insight into the field of clinical engineering and prosthetics. This experience has deepened my interest in medical technology and its potential to improve lives through innovative design and engineering.</p>
 
-    <hr style="border: none; height: 1px; background-color: black; margin-bottom: 30px;">
+        <h6><p>Engineering Experience</p></h6>
+        <h7><p>2025-Present Edinburgh Designs, Junior Engineer</p></h7>
+        <h7><p>2025-2025 Edinburgh Designs, Placement Engineer</p></h7>
+        <h7><p>2024-2024 Builders École d’Ingénieurs, Sustainable Development Project Lead</p></h7>
+        <h7><p>2024-2024 Queen’s University, Biomechanical Project Lead</p></h7>
+        <h7><p>2023-2024 Queen’s University, Aerodynamics Team Member</p></h7>
+        <h7><p>2022-2022 Graham Kendall Motor Engineers, Automotive Repair Intern</p></h7>
+        <h7><p>2021-2022 TalkingMedicines, 2Data Annotator</p></h7>
 
-    <p>I am a curious and driven individual with a passion for problem-solving, innovation, and continuous learning. With a background in Mechanical Engineering and hands-on experience as a Junior Engineer, I apply creative and analytical thinking to complex challenges. </p>
-    
-    <p>Over the last five years, I have sought experience across multiple industries, looking to see how I can apply my skillset to make real impact. Relevant industries include: hydrodynamics, building services, data science, performance engineering and automotive repair.</p>
-    
-    <p>Recently, I attended an open day at the NHS SMART Centre, based at the Astley Ainslie Hospital, to gain insight into the field of clinical engineering and prosthetics. This experience has deepened my interest in medical technology and its potential to improve lives through innovative design and engineering.</p>
-
-    <h6><p>Engineering Experience</p></h6>
-
-    <h7><p>2025-Present Edinburgh Designs, Junior Engineer</p></h7>
-    <h7><p>2025-2025 Edinburgh Designs, Placement Engineer</p></h7>
-    <h7><p>2024-2024 Builders École d’Ingénieurs, Sustainable Development Project Lead</p></h7>
-    <h7><p>2024-2024 Queen’s University, Biomechanical Project Lead</p></h7>
-    <h7><p>2023-2024 Queen’s University, Aerodynamics Team Member</p></h7>
-    <h7><p>2022-2022 Graham Kendall Motor Engineers, Automotive Repair Intern</p></h7>
-    <h7><p>2021-2022 TalkingMedicines, Data Annotator</p></h7>
-
-
-
-    <h6><p>University Education</p></h6>
-
-    <p>2021-2026 The University of Edinburgh, MEng, Mechanical Engineering</p>
-
-    `,
-
-    contact: `
+        <h6><p>University Education</p></h6>
+        <p>2021-2026 The University of Edinburgh, MEng, Mechanical Engineering</p>
+      `,
+      contact: `
         <h4>Contact</h4>
-
-    <hr style="border: none; height: 1px; background-color: black; margin-bottom: 30px;">
-
-    <p>Feel free to reach out — I’m always open to new ideas and conversations. </p>
-
-    <p>Email: calumfleming18@gmail.com </p>
-
-     `,
-    reading: `
+        <hr style="border: none; height: 1px; background-color: black; margin-bottom: 30px;">
+        <p>Feel free to reach out — I’m always open to new ideas and conversations. </p>
+        <p>Email: calumfleming88@gmail.com </p>
+      `,
+      reading: `
         <h4>Reading</h4>
-
-    <hr style="border: none; height: 1px; background-color: black; margin-bottom: 30px;">
-
-    <p>Le Corbusier Architect of the Century</p>
-    <p>We are Electric - Sally Adee</p>
-     `
+        <hr style="border: none; height: 1px; background-color: black; margin-bottom: 30px;">
+        <p>Le Corbusier Architect of the Century</p>
+        <p>We are Electric - Sally Adee</p>
+      `
     };
 
     buttons.forEach(button => {
@@ -112,15 +114,163 @@
         button.classList.add('active');
         const section = button.dataset.section;
         content.innerHTML = sections[section];
+
+        // /* photos START */ bind hover swap + modal after injecting Engineering
+        if (section === 'engineering') {
+          initEngineeringInteractions();
+          initEngineeringModal();
+        }
+        // /* photos END */
       });
     });
+
+    // /* photos START */ data for quick view modal
+    const projectData = {
+  "window-vent": {
+    title: "Accessible Window Trickle Vent ",
+    desc: `A 3D-printed replacement trickle vent designed to improve existing device function by allowing users to open and close high-mounted vents with a rod. Developed iteratively with the client, the design enables independent ventilation control through a simple, low-friction mechanism compatible with standard vent units.
+    <br><br>
+    <a href="vent  shutter dugleg.STL" download class="download-link"> Download trickle vent file for 3D printing (STL)</a>`,
+    image: "vents.png",
+    imageAlt: "Window Trickle Vent part"
+  },
+  "auto-watering": {
+    title: "Coming Soon",
+    desc: "Raspberry Pi-driven soil moisture sensing with a compact pump."
+  }
+};
+    // /* photos END */
+
+    // /* photos START */ hover swap logic for engineering images
+    function initEngineeringInteractions() {
+      const imgs = document.querySelectorAll('#content .eng-img');
+      if (!imgs.length) return;
+
+      // Preload hover images
+      imgs.forEach(img => {
+        const hoverSrc = img.getAttribute('data-hover-src');
+        if (hoverSrc) {
+          const pre = new Image();
+          pre.src = hoverSrc;
+        }
+      });
+
+      imgs.forEach(img => {
+        const original = img.getAttribute('data-original-src');
+        const hover = img.getAttribute('data-hover-src');
+
+        img.addEventListener('mouseenter', () => {
+          if (!hover) return;
+          img.classList.add('swapping');
+          img.src = hover;
+          requestAnimationFrame(() => {
+            setTimeout(() => img.classList.remove('swapping'), 80);
+          });
+        });
+
+        img.addEventListener('mouseleave', () => {
+          if (!original) return;
+          img.classList.add('swapping');
+          img.src = original;
+          requestAnimationFrame(() => {
+            setTimeout(() => img.classList.remove('swapping'), 80);
+          });
+        });
+
+        // Touch feedback
+        img.addEventListener('touchstart', () => {
+          if (hover) img.src = hover;
+          setTimeout(() => { if (original) img.src = original; }, 400);
+        }, { passive: true });
+      });
+    }
+    // /* photos END */
+
+    // /* photos START */ modal logic
+    function initEngineeringModal() {
+      const overlay = document.getElementById('quickview-overlay');
+      const modal   = document.getElementById('quickview-modal');
+      const closeBt = document.getElementById('qv-close');
+
+      const img   = document.getElementById('qv-image');
+      const title = document.getElementById('qv-title');
+      const desc  = document.getElementById('qv-desc');
+      const list  = document.getElementById('qv-bullets');
+
+      let lastTrigger = null;
+
+      function openModal(slug) {
+        const data = projectData[slug];
+        if (!data) return;
+
+        img.src = data.image;
+        img.alt = data.imageAlt || "";
+        title.textContent = data.title || "";
+        desc.innerHTML = data.desc || "";
+        list.innerHTML = "";
+        (data.bullets || []).forEach(b => {
+          const li = document.createElement('li');
+          li.textContent = b;
+          list.appendChild(li);
+        });
+
+        overlay.setAttribute('aria-hidden', 'false');
+        modal.setAttribute('aria-hidden', 'false');
+
+        closeBt.focus();
+        document.addEventListener('keydown', onEsc);
+      }
+
+      function closeModal() {
+        overlay.setAttribute('aria-hidden', 'true');
+        modal.setAttribute('aria-hidden', 'true');
+        document.removeEventListener('keydown', onEsc);
+        if (lastTrigger) lastTrigger.focus();
+      }
+
+      function onEsc(e) { if (e.key === 'Escape') closeModal(); }
+
+      closeBt.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      // intercept clicks on engineering cards
+      const cards = document.querySelectorAll('#content .eng-card');
+      cards.forEach(card => {
+        card.addEventListener('click', (e) => {
+          e.preventDefault(); // keep href for fallback, but use modal
+          lastTrigger = card;
+          const slug = card.getAttribute('data-slug');
+          openModal(slug);
+        });
+      });
+    }
+    // /* photos END */
   </script>
 
-  
+  <!-- /* photos START */ quick view modal container -->
+  <div id="quickview-overlay" class="qv-overlay" aria-hidden="true"></div>
 
-
-  
-
- 
+  <div
+    id="quickview-modal"
+    class="qv-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="qv-title"
+    aria-describedby="qv-desc"
+    aria-hidden="true"
+  >
+    <button class="qv-close" aria-label="Close quick view" id="qv-close">×</button>
+    <div class="qv-grid">
+      <div class="qv-media">
+        <img id="qv-image" src="" alt="" />
+      </div>
+      <div class="qv-details">
+        <h2 id="qv-title"></h2>
+        <p id="qv-desc"></p>
+        <ul id="qv-bullets"></ul>
+      </div>
+    </div>
+  </div>
+  <!-- /* photos END */ -->
 </body>
 </html>
