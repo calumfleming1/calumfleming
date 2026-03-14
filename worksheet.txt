@@ -1,0 +1,316 @@
+<img src="Trickle Vents.jpg" alt="Trickle Vents" class="float-right">
+
+
+
+    
+    <button type="button" class="collapsible"><img src="Trickle Vents.jpg" alt="Trickle Vents" class="float-right"></button>
+<div class="content">
+  <h2><p>Problem: if a trickle vent is out of arms reach, how can you use an object to close such a small flap?  </p></h2>
+</div>
+
+<script>var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}</script>
+
+
+04/10/25
+
+<!DOCTYPE html>
+<html>
+<html lang="en">
+    
+
+<head>
+    <title> Calum Fleming Engineering </title> 
+    <meta charset="UTF-8">
+    <meta name="description" content="Late projects worked on by Calum Fleming.">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>  
+    <h1> <center>Portfolio</center>  </h1>
+    <hr style="border: none; height: 2px; background-color: black;">
+
+        <div class="image123">
+    <div class="imgContainer">
+        <img src="/images/tv.gif" height="200" width="200"/>
+        
+
+    </div>
+    <div class="imgContainer">
+        <img class="middle-img" src="/images/tv.gif"/ height="200" width="200"/>
+
+    </div>
+    <div class="imgContainer">
+         <img src="/images/tv.gif"/ height="200" width="200"/>
+
+        </div>
+    <div class="imgContainer">
+         <img src="/images/tv.gif"/ height="200" width="200"/>
+
+
+    </div>
+
+ css
+
+ 
+ body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: #222;
+    background-color: #fafafa;
+    margin: 0;
+    line-height: 1.7;
+  }
+
+h1 {
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: normal;
+    line-height: 0.4;
+    font-variant: small-caps;
+  }
+
+h2 {
+    font-weight: bold;
+    font-size: 10px;
+    letter-spacing: normal;
+        font-variant: small-caps;
+
+  }
+
+
+.float-right {
+  float: right;
+  margin-left: 15px; 
+  margin-right: 100px; 
+  margin-bottom: 10px;
+  margin-top: 20px;
+  width: 150px;
+  height: auto;
+}
+
+/*https://www.w3schools.com/howto/howto_js_collapsible.asp
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #fafafa;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: initial;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #f1f1f1;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 18px;
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+/* https://stackoverflow.com/questions/24680030/align-images-side-by-side-in-html*/
+.imgContainer{
+    float:left;
+  margin-left: 15px; 
+  margin-right: 50px; 
+  margin-bottom: 10px;
+  margin-top: 20px;
+  width: 150px;
+  height: auto;
+}
+
+   
+
+
+
+<div class="row"> 
+  <div class="column">
+    <img src="Trickle Vents.jpg">
+  </div>
+  <div class="column">
+    <img src="monstera.jpg">
+  </div> 
+  <div class="column">
+    <img src="mirror.jpg">
+  </div>
+  <div class="column">
+    <img src="hook.jpg">
+  </div>
+</div>
+
+
+
+--
+
+
+ body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: #222;
+    background-color: #fafafa;
+    margin: 0;
+    line-height: 1.7;
+  }
+
+h1 {
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: normal;
+    line-height: 0.4;
+    font-variant: small-caps;
+  }
+
+  cool inspo: https://henninglarsen.com 
+
+05/10/25
+
+  cool feature: about: fun  and business version
+
+  I like sophie kahns in photos
+
+    <hr style="border: none; height: 2px; background-color: black;">
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Calum Fleming Projects</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Late projects worked on by Calum Fleming.">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+  <h1>Calum Fleming</h1>
+
+  <h2>Accessible Design</h2>
+
+  <h3>Control Systems</h3>
+
+  <h3>Art?</h3>
+
+
+
+  
+
+  <hr style="border: none; height: 2px; background-color: black; margin-top: 1000px;">
+
+  <div class="row">
+    <div class="column">
+      <img src="Trickle Vents.jpg">
+      <img src="monstera.jpg">
+    </div>
+
+    <div class="column">
+      <video autoplay loop muted playsinline>
+        <source src="wallet.mov" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="column">
+      <img src="hook.jpg">
+    </div>
+
+    <div class="column">
+      <img src="mirror.jpg">
+    </div>
+  </div>
+</body>
+</html>
+
+06/10/25 
+
+change the blue model of wallet to sketch. 
+
+
+
+creative: `
+        <h4>Creative</h4>
+
+    <hr style="border: none; height: 1px; background-color: black; margin-bottom: 30px;">
+
+         <div class="row">
+    <div class="column">
+      <img src="mirror.jpg">
+      <img src="monstera.jpg">
+    </div>
+
+    <div class="column">
+      <video autoplay loop muted playsinline>
+        <source src="wallet.mov" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>  
+
+
+
+
+    Engineering
+
+
+             <div class="row">
+
+     <div class="columneng1">
+      <video autoplay loop muted playsinline>
+        <source src="wallet.mov" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="columneng2">
+      <img src="accessiblewalletdrawing.png">
+    </div>
+
+
+
+
+21/10/25 Trying to add buttons for photos, liking the idea of black then to green for the photos when mouse hovers.
+
+  // ---- PHOTO BUTTONS ----
+
+   const photobuttons = document.querySelectorAll('.photobutton');
+   const content = document.getElementById('content');
+
+   const sections = {
+
+     trickle: `
+        <h4>Trickle Vent</h4>
+        `
+   };
+
+   photobuttons.forEach(button => {
+      button.addEventListener('click', () => {
+        photobuttons.forEach(b => b.classList.remove('active'));
+        button.classList.add('active');
+        const section = button.dataset.section;
+        content.innerHTML = sections[section];
+      });
+    });
+
+
+  </script>

@@ -16,6 +16,7 @@ body {
 h1 {
   font-weight: bold;
   font-size: 24px;
+  color: #3c3c3c;
   letter-spacing: 0.1px;
   line-height: 0.4;
   margin-left: 60px;
@@ -45,6 +46,7 @@ h3 {
 /*Section Title*/
 h4 {
   font-weight: normal;
+  color: #3c3c3c;  
   font-size: 22px;
   letter-spacing: 0.1px;
   line-height: 0.4;
@@ -79,8 +81,28 @@ h6 {
 h7 {
   margin-top: 0px;
   margin-bottom: 0px;
-  line-height: 0.7;
+  line-height: 1.2;
 }
+
+h8 {
+  font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 1.2;
+}
+
+
+h9 {
+  font-weight: bold;
+  margin-left: 10px;
+  color: #5D5D5D;
+  font-size: 18px;
+  letter-spacing: 0.1px;
+  line-height: 0.4;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
 
 .column1 {
   flex: 25%;
@@ -144,6 +166,41 @@ h7 {
   height: 290px;
 }
 
+/* SITE PREVIEW CODE */
+
+.site-preview {
+  border: 1px solid #ddd;
+  background: white;
+  width: auto;
+  height: clamp(160px, 35vw, 320px);
+  overflow: hidden;
+  margin-bottom: -10px;
+}
+
+.site-preview iframe {
+  height: calc(clamp(160px, 35vw, 320px) * 4);
+  width: calc(100% * 4);
+  border: none;
+  transform: scale(0.25);
+  transform-origin: top left;
+}
+
+.projects {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 80px;
+}
+
+.project img,
+.project video {
+  height: clamp(160px, 35vw, 320px);
+  width: auto;
+  display: block;
+  margin-bottom: -10px;
+}
+
 @media screen and (max-width: 800px) {
   .column {
     flex: 50%;
@@ -157,6 +214,7 @@ h7 {
     max-width: 100%;
   }
 }
+
 
 /* menu */
 
@@ -192,10 +250,9 @@ h7 {
 
 /* photos START */
 /* Interactive engineering cards + hover effect */
-.eng-card { display: inline-block; text-decoration: none; }
-.eng-img { transition: opacity 120ms ease-in-out, transform 120ms ease-in-out; cursor: pointer; }
-.eng-img.swapping { opacity: 0.8; }
-.eng-card:hover .eng-img { transform: translateY(-1px); }
+.eng-card:hover .eng-img {
+  outline: 2px solid #52c820;
+}
 
 /* Quick View Modal */
 .qv-overlay {
@@ -214,12 +271,12 @@ h7 {
 .qv-overlay[aria-hidden="false"] { opacity: 1; pointer-events: auto; }
 
 .qv-grid {
-  width: min(960px, 92vw); background: #fff; border-radius: 16px;
+  width: min(1100px, 92vw); background: #fff; border-radius: 0px;
   box-shadow: 0 20px 60px rgba(0,0,0,0.25);
   display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding: 24px;
 }
 
-.qv-media img { width: 100%; height: auto; border-radius: 12px; display: block; }
+.qv-media img { width: 100%; height: auto; border-radius: 0px; display: block; }
 
 .qv-details h2 { margin: 0 0 6px; font-size: 24px; }
 .qv-details p { margin: 10px 0 12px; }

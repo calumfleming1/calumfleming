@@ -13,8 +13,9 @@
   <div class="row">
     <div class="column1">
       <div class="menu">
-        <h2><button data-section="engineering">Engineering</button></h2>
-        <h3><button data-section="creative">Creative</button></h3>
+        <h2><button data-section="professional">Professional</button></h2>
+        <h3><button data-section="personal">Personal</button></h3>
+        <h3><button data-section="academic">Academic</button></h3>
         <h2><button data-section="about">About</button></h2>
         <h3><button data-section="blog">Blog</button></h3>
         <h3><button data-section="reading">Reading</button></h3>
@@ -37,44 +38,186 @@
     const content = document.getElementById('content');
 
     const sections = {
-      engineering: `
-        <h4>Engineering</h4>
+      professional: `
+        <h4>Professional</h4>
         <hr style="border: none; height: 1px; background-color: black; margin-bottom: 100px;">
-        <div class="row">
 
-          <!-- /* photos START */ interactive cards + data for hover swap + modal trigger -->
-          <div class="columneng1">
-            <a class="eng-card" href="project-window-vent.html" data-slug="window-vent">
-              <img
-                src="windowventdoodle.png"
-                alt="Window ventilation concept doodle"
-                class="eng-img"
-                data-hover-src="windowventdoodleg.png"
-                data-original-src="windowventdoodle.png"
-              >
-            </a>
-          </div>
+        <h9>Edinburgh Designs</h9>
 
-          <div class="columneng2">
-            <a class="eng-card" href="project-watering.html" data-slug="auto-watering">
-              <img
-                src="wateringdoodle.png"
-                alt="Self-watering system concept doodle"
-                class="eng-img"
-                data-hover-src="wateringdoodleg.png"
-                data-original-src="wateringdoodle.png"
-              >
-            </a>
-          </div>
-          <!-- /* photos END */ -->
+        <div class="projects">
 
-        </div>
+  <div class="project">
+    <a class="eng-card" href="project-steel-work.html" data-slug="steel-work">
+    <img
+      src="wavetank.jpg"
+      alt="Wave Tank Picture"
+      class="eng-img"
+    >
+  </a>
+    <h8><p class="caption">Wave Tank Steelwork Design & Manufacture</p></h8>
+  </div>
+
+    <div class="project">
+    <a class="eng-card" href="project-flow-system.html" data-slug="flow-system">
+    <img
+      src="flowsystem.png"
+      alt="Flow System Picture"
+      class="eng-img"
+    >
+  </a>
+    <h8><p class="caption">Mechanical Subsystem Design & Manufacture</p></h8>
+  </div>
+
+  </div>
       `,
-      creative: `
-        <h4>Creative</h4>
+      personal: `
+      <h4>Personal</h4>
         <hr style="border: none; height: 1px; background-color: black; margin-bottom: 100px;">
-        <p> Coming Soon </p>
+
+      <h9>User Centred Design</h9>
+
+  <div class="projects">
+
+  <div class="project">
+    <a class="eng-card" href="gravity-wallet.html" data-slug="gravity-wallet">
+
+      <video class="eng-img" autoplay loop muted playsinline>
+        <source src="wallet.mov" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+    </a>
+
+    <h8><p class="caption">Gravity Wallet</p></h8>
+  </div>
+
+<div class="project">
+    <a class="eng-card" href="window-vent.html" data-slug="window-vent">
+    <img
+      src="vents.png"
+      alt="Window Trickle Vent CAD"
+      class="eng-img"
+    >
+  </a>
+    <h8><p class="caption">Window Trickle Vent</p></h8>
+  </div>
+
+  <div class="project">
+    <a class="eng-card" href="wheelchair-cad.html" data-slug="wheelchair-cad">
+    <img
+      src="wheelchaircad.png"
+      alt="Wheelchair Football Boot CAD"
+      class="eng-img"
+    >
+  </a>
+    <h8><p class="caption">Wheelchair Football Boot</p></h8>
+  </div>
+
+    <div class="project">
+    <a class="eng-card" href="plantpot-cad.html" data-slug="plantpot-cad">
+    <img
+      src="plantpot.png"
+      alt="Self-watering Plant Saucer CAD"
+      class="eng-img"
+    >
+  </a>
+    <h8><p class="caption">Self-watering Plant Saucer</p></h8>
+  </div>
+
+      <div class="project">
+  <a class="eng-card" href="index.html">
+
+    <div class="site-preview">
+      <iframe src="index.html#personal"></iframe>
+    </div>
+
+  </a>
+  <h8><p class="caption">This Website</p></h8>
+</div>
+
+  </div>
+
+<h9>Creative</h9>
+
+<div class="projects">
+
+<div class="project">
+    <a class="eng-card" href="mirror.html" data-slug="mirror">
+    <img
+      src="mirror.jpg"
+      alt="Wooden Mirrror"
+      class="eng-img"
+    >
+  </a>
+    <h8><p class="caption">Pine Mirror</p></h8>
+  </div>
+
+<div class="project">
+    <a class="eng-card" href="hook.html" data-slug="hook">
+    <img
+      src="hook.jpg"
+      alt="Door Hook"
+      class="eng-img"
+    >
+  </a>
+    <h8><p class="caption">Pine Door Hook</p></h8>
+  </div>
+
+
+  </div>
+
       `,
+
+      academic: `
+        <h4>Academic</h4>
+        <hr style="border: none; height: 1px; background-color: black; margin-bottom: 100px;">
+
+  <h9>Dissertation</h9>
+  
+   <div class="projects">
+
+    <div class="project">
+    <img src="dissertation.png">
+    <h8><p class="caption">Dissertation Access</p></h8>
+  </div>
+
+   <div class="project">
+    <img src="systemboundarydiagramdiss.png">
+    <h8><p class="caption">Dissertation Model System Boundary of 990 MW Offshore Wind Farm</p></h8>
+  </div>
+
+  </div>
+
+
+  <h9>Collaborative Work</h9>
+
+  <div class="projects">
+
+  <div class="project">
+    <a class="eng-card" href="seat.html" data-slug="seat">
+    <img
+      src="seatingadaptive.jpeg"
+      alt="Seating Prototype"
+      class="eng-img"
+    >
+  </a>
+    <h8><p class="caption">Adaptive Seating Prototype</p></h8>
+  </div>
+
+   <div class="project">
+    <img src="caenplan.png">
+    <h8><p class="caption">Brownfield Sustainable Development Masterplan</p></h8>
+  </div>
+
+  <div class="project">
+    <img src="queensracing.jpg">
+    <h8><p class="caption">Queen's Formula Student Aerodynamics Team</p></h8>
+  </div>
+
+  </div>
+
+  </div>`,
+
       about: `
         <h4>About</h4>
         <hr style="border: none; height: 1px; background-color: black; margin-bottom: 30px;">
@@ -82,15 +225,18 @@
         <p>Through my projects, I seek to integrate engineering capability and creativity, having had the pleasure to collaborate with various disciplines in different countries. My current focus for collaborative and creative work rests in my volunteering role at REMAP, a charity which develops devices for people with disabilities, which I joined following an insight day at the NHS Smart Centre.</p>
         <p>I look to build my experience within biomedical research and development, with a particular interest in iterative prototyping and interdisciplinary collaboration. I am focused on developing systems-level biomedical insight relevant to medical device technologies, including challenges in tissue interaction, device miniaturisation, and the integration of sensing and actuation within constrained biological environments.</p>
         <p>Feel free to reach out — calumfleming88@gmail.com</p>
-        <h6><p>Experience</p></h6>
+        <h6><p>Professional Experience</p></h6>
         <p>2025-Present Edinburgh Designs, Junior Engineer</p>
-        <p>2025-Present REMAP, Volunteer Engineer</p>
         <p>2025-2025 Edinburgh Designs, Placement Engineer</p>
+        <p>2022-2022 Graham Kendall Motor Engineers, Automotive Repair Intern</p>
+        <p>2021-2022 Talking Medicines, Data Annotator</p>
+
+        <h6><p>Initiatives & Projects</p></h6>
+        <p>2025-Present REMAP, Volunteer Engineer</p>
         <p>2024-2024 Builders École d’Ingénieurs, Sustainable Development Project Lead</p>
         <p>2024-2024 Queen’s University, Biomechanical Project Lead</p>
         <p>2023-2024 Queen’s University, Aerodynamics Team Member</p>
-        <p>2022-2022 Graham Kendall Motor Engineers, Automotive Repair Intern</p>
-        <p>2021-2022 Talking Medicines, Data Annotator</p>
+
 
         <h6><p>University Education</p></h6>
         <p>2021-2026 The University of Edinburgh, MEng, Mechanical Engineering</p>
@@ -116,12 +262,10 @@
         const section = button.dataset.section;
         content.innerHTML = sections[section];
 
-        // /* photos START */ bind hover swap + modal after injecting Engineering
-        if (section === 'engineering') {
-          initEngineeringInteractions();
-          initEngineeringModal();
-        }
-        // /* photos END */
+       // /* photos START */ bind hover swap + modal after injecting content
+initEngineeringInteractions();
+initEngineeringModal();
+// /* photos END */
       });
     });
 
@@ -129,15 +273,168 @@
     const projectData = {
   "window-vent": {
     title: "Accessible Window Trickle Vent ",
-    desc: `A 3D-printed replacement trickle vent designed to improve existing device function by allowing users to open and close high-mounted vents with a rod. Developed iteratively with the client, the design enables independent ventilation control through a simple, low-friction mechanism compatible with standard vent units.
-    <br><br>
-    <a href="vent  shutter dugleg.STL" download class="download-link"> Download trickle vent file for 3D printing (STL)</a>`,
-    image: "vents.png",
-    imageAlt: "Window Trickle Vent part"
+    desc: `
+    <p>3D-printed replacement trickle vent replacement, improving control accessibility by allowing users to open and close high-mounted vents with a rod. Enables independent ventilation control through a simple, low-friction replacement mechanism compatible with standard vent units.
+      <a href="vent  shutter dugleg.STL" download class="download-link"> Download trickle vent file for 3D printing (STL)</a></p>
+
+     <ul>
+    <li>Client-guided design development</li>
+    <li>Reverse engineering of unit</li>
+    <li>Destructive testing</li>
+    <li>Design for client-led manufacture (open-access 3D printing)</li>
+    </ul>
+
+    <br><br> `,
+    image: "ventcad.png",
+    imageAlt: "Window Trickle Vent CAD"
   },
+
   "auto-watering": {
     title: "Coming Soon",
     desc: "Raspberry Pi-driven soil moisture sensing with a compact pump."
+  },
+
+  "steel-work": {
+    title: "Wave Tank Steelwork Design & Manufacture ",
+    desc: `
+    <p>Supported the design and manufacture of a European wave tank, contributing to steelwork structure, drawings, procurement, and supplier coordination. Focused on improving manufacturing and installation processes through component redesign, to enhance accessibility, assembly efficiency, and build accuracy. </p>
+     <ul>
+    <li>Installation accessibility constraints</li>
+    <li><strong>Finite element analysis</strong></li>
+    <li>Material selection</li>
+    <li><strong>SolidWorks</strong> modelling (sheet metal design, full-tank assemblies)</li>
+    <li>Supplier relationships</li>
+    <li>Quality assurance visits</li>
+    <li>Coordination of lead times</li>
+    </ul>
+
+    <br><br>`,
+    image: "coastalpiston.png",
+    imageAlt: "Coastal Piston Wavemaker"
+  },
+    "flow-system": {
+    title: "Mechanical Subsystem Design & Manufacture ",
+    desc: `
+   <p>Mechanical design of flow systems and pneumatic drainage systems, using in-house calculation methods and experimental testing.</p>
+   
+   <ul>
+    <li>Component sizing and selection</li>
+    <li>Experimental setup and validation</li>
+    <li>Propellor procurement</li>
+    <li><strong>Hands-on</strong> component manufacture (lathe, mill, 3D printer)</li>
+    <li>System assembly</li>
+  </ul>
+  
+    <br><br>`,
+    image: "flowsystemcad.jpg",
+    imageAlt: "Flow System CAD"
+  },
+    "gravity-wallet": {
+    title: "Gravity Wallet",
+    desc: `
+
+   <p>
+Wallet design challenge for individuals with arthritis, hosted by 
+<a href="https://www.makersmakingchange.com" target="_blank" rel="noopener">
+Makers Making Change
+</a>. 
+Mechanism design inspired by gravity knives, which are banned in the UK for being "too accessible".
+</p>
+
+   <ul>
+    <li>Product architecture</li>
+    <li>Prototyping and testing</li>
+    <li>Ergonomic design</li>
+    <li>Cost constraints</li>
+    <li>Design for manufacturing (3D printing)</li>
+  </ul>
+  
+    <br><br>`,
+    image: "gravityknife.jpg",
+    imageAlt: "Flow System CAD"
+  },
+
+  "wheelchair-cad": {
+    title: "Wheelchair Football Boot",
+    desc: `
+
+   <p> Wheelchair football boot design, retrofitted to a Quickie Q200 R wheelchair. Client wishes to play football, which is made possible through funding from
+<a href="https://remap.org.uk" target="_blank" rel="noopener">
+REMAP</a>. 
+Project scope is the full design and manufacture, based on client's request.
+</p>
+
+   <ul>
+    <li>Client collaboration</li>
+    <li>Product integration</li>
+    <li>Ergonomic design</li>
+    <li>Hands-on manufacturing (mill, welding)</li>
+  </ul>
+  
+    <br><br>`,
+    image: "quickieq200r.png",
+    imageAlt: "Quickie Q200R Wheelchair"
+  },
+
+  "plantpot-cad": {
+    title: "Self-watering Plant Saucer",
+    desc: `
+
+   <p>Plant saucer developed to save plants from premature death. Currently a raspberry Pi-4 controlled system, utilising a 5V DC motor and a capacitive moisture sensor.</p>
+
+   <ul>
+    <li>Product architecture</li>
+    <li>Control system design</li>
+    <li>Electronic design</li>
+    <li>Design for manufacturing (3D printing)</li>
+  </ul>
+  
+    <br><br>`,
+    image: "monstera.jpg",
+    imageAlt: "Monstera"
+  },
+
+ "mirror": {
+    title: "Pine Mirror",
+    desc: `
+
+   <p>Free marketplace mirror?</p>
+  
+    <br><br>`,
+    image: "mirror.jpg",
+    imageAlt: "Mirror"
+  },
+
+ "hook": {
+    title: "Pine Door Hook",
+    desc: `
+
+   <p>Simple problems require simple solutions! One of my favourite designs...</p>
+
+   <ul>
+    <li>Not overcomplicating things</li>
+    <li>Saw</li>
+  </ul>
+  
+    <br><br>`,
+    image: "hook.jpg",
+    imageAlt: "Hook"
+  },
+
+  "seat": {
+    title: "Adaptive Seating Prototype",
+    desc: `
+
+   <p>An adaptive seating prototype</p>
+
+   <ul>
+    <li>1</li>
+    <li>2</li>
+  </ul>
+  
+    <br><br>`,
+    image: "hook.jpg",
+    imageAlt: "Hook"
   }
 };
     // /* photos END */
@@ -197,6 +494,8 @@
       const title = document.getElementById('qv-title');
       const desc  = document.getElementById('qv-desc');
       const list  = document.getElementById('qv-bullets');
+
+      
 
       let lastTrigger = null;
 
