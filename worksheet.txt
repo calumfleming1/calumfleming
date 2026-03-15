@@ -314,3 +314,27 @@ creative: `
 
 
   </script>
+
+
+
+
+140326:
+
+/* SITE PREVIEW CODE */
+
+.site-preview {
+  border: 1px solid #ddd;
+  background: white;
+  width: auto;
+  height: clamp(160px, 35vw, 320px);
+  overflow: hidden;
+  margin-bottom: -10px;
+}
+
+.site-preview iframe {
+  height: calc(clamp(160px, 35vw, 320px) * 4);
+  width: calc(100% * 4);
+  border: none;
+  transform: scale(0.25);
+  transform-origin: top left;
+}
